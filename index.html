@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js-file.js"></script>
+
+    <title>Document</title>
+</head>
+<body class="two-sides">
+    <section>
+        <div class="hero">
+            <div class="title">
+                <img class="logo" src="img/odin-lined.png" alt="the odin project logo">
+                <h1>ODIN</h1>
+            </div>
+            <p class="cite">Photo by <u>Halie West</u> on <u>Unsplash</u></p>
+        </div>
+    </section>
+    <section>
+        <div class="quote">
+            <p class="qtext">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em>  to get started.</p>
+            <p>You <em>know</em>  you want to.</p>
+        </div>
+        <div class="form">
+            <p>Lets do this!</p>
+            <div>
+                <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+
+                <div class="row">
+                    <div>
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" id="fname" required>
+                    </div>
+
+                    <div>
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" id="lname">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" required>
+                    </div>
+        
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" minlength="7">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div>
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" id="pass" minlength="6" required>
+                    </div>
+                    
+                    <div>
+                        <label for="cpass">CONFIRM PASSWORD</label>
+                        <input type="password" id="cpass" minlength="6" required>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="submit">
+            <input class="button" type="submit" value="Create Account"></button>
+        </form>
+            <p>Already have an account? <span class="green">Log in</span></p>
+        </div>
+    </section>
+</body>
+</html>
